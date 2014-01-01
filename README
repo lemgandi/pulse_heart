@@ -1,0 +1,30 @@
+Pulse_heart readme file
+Charles Shapiro 
+charles.shapiro@tomshiro.org
+1 Jan 2014
+
+
+
+This sketch flashes the open heart circuitboard
+(http://jimmieprodgers.com/kits/openheart/ ) every time your heart
+beats, using the Arduino PulseSensor module ( http://pulsesensor.com/
+) to detect heartbeats.  Use the Arduino IDE to compile it and load it
+into your Arduino.  I have verified that it works on my Arduino Uno.
+
+Plug the detector into the first sensor pin, +5V, and ground as
+detailed in the pulsesensor "getting started" guide.  You can use a
+F-to-F breakaway header block to plug the heart array into pins 8
+through 13 of your Arduino.  You can of course change values in the
+sketch as you wish.
+
+The "Heart" array in the top of the pulse_heart.ino file contains the
+patterns which will flash when this software detects a heartbeat. Each
+array of (char) array of 27 digits represents a pattern which will
+flash across the board.  The "blinkdelay" and "runspeed" numbers
+govern how long the flash will last; if you alter these, you may find
+that the LED board cannot keep up with your heartbeats, which are
+typically occur around once a second.
+
+Happy Hacking!
+
+
