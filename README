@@ -22,7 +22,7 @@ patterns which will flash when this software detects a heartbeat. Each
 array of (char) array of 27 digits represents a pattern which will
 flash across the board.  The "blinkdelay" and "runspeed" numbers
 govern how long the flash will last; if you alter these, you may find
-that the LED board cannot keep up with your heartbeats, which are
+that the LED board cannot keep up with your heartbeats, which
 typically occur around once a second.
 
 Happy Hacking!
